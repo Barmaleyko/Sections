@@ -1,0 +1,8 @@
+<h1>New heading</h1>
+<% if user_signed_in? %>
+<%= render 'form' %>
+
+<%= link_to 'Back', headings_path %>
+<% else %>
+<%= "Sign in or Sign up!!!" %>
+<% end %>

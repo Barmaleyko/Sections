@@ -1,0 +1,14 @@
+<div style="margin: 50px">
+  <%= form_tag headings_index_path, :method => :get do  %>
+
+      <p>
+      <div class="field">
+
+        <%= text_field_tag :search, params[:search] %>
+        <%= submit_tag "Search", :H_Name => nil %>
+
+
+<% end %>
+</div>
+  </p>
+</div>

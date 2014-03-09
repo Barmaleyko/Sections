@@ -1,0 +1,15 @@
+<h1>Sections</h1>
+<% @sections.each do |sections| %>
+    <strong><%= sections.Sec_Name %></strong>
+    <% @headings.each do |head| %>
+        <% if head.section_id == sections.id %>
+            <table>
+              <tr>
+                <td> <%= link_to head.H_Name, head %></td>
+              </tr>
+            </table>
+        <% end %>
+    <% end %>
+    <br>
+<% end %>
+

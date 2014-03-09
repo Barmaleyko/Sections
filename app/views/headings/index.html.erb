@@ -1,0 +1,36 @@
+<%= render partial: 'headings/search' %>
+
+<h1>Listing headings</h1>
+
+
+
+<table>
+  <thead>
+  <tr>
+    <th>Name </th>
+    <th>Phone</th>
+    <th>Address</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+  </thead>
+
+  <tbody>
+  <% @headings.each do |heading| %>
+      <tr>
+        <td><%= heading.H_Name %></td>
+        <td><%= heading.H_Phone %></td>
+        <td><%= heading.H_Address %></td>
+
+
+
+
+      </tr>
+  <% end %>
+  </tbody>
+</table>
+
+<br>
+
+
